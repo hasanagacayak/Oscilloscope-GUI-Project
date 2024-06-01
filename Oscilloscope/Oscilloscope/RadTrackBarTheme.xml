@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="MyNewTheme">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="Telerik.WinControls.DefaultStyleBuilder">
+      <StylesheetRelations>
+        <RadStylesheetRelation ElementType="Telerik.WinControls.RootRadElement" RegistrationType="ElementTypeControlType" ElementName="" ControlName="" ControlType="Telerik.WinControls.UI.RadTrackBar" />
+      </StylesheetRelations>
+      <BuilderData xsi:type="XmlStyleSheet">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="189, 219, 255" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="189, 219, 255" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="TrackBarFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="231, 239, 255" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="156, 190, 247" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.EllipseShape" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ThumbFillBack" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="99, 146, 206" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="TrackBarThumbBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.501597464" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.5623003" />
+              <XmlAnimatedPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" EndValue="255, 247, 206" StartValueIsCurrentValue="False" />
+              <XmlAnimatedPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" EndValue="255, 223, 132" StartValueIsCurrentValue="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ThumbFillBack">
+                <Condition xsi:type="XmlComplexCondition" BinaryOperator="OrOperator">
+                  <Condition1 xsi:type="XmlSimpleCondition">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseDown" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" EndValue="255, 190, 107" StartValueIsCurrentValue="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="TrackBarThumbBorder">
+                <Condition xsi:type="XmlComplexCondition" BinaryOperator="OrOperator">
+                  <Condition1 xsi:type="XmlSimpleCondition">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseDown" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTrackBarItem.SliderAreaGradientColor1" Value="DimGray" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTrackBarItem.SliderAreaGradientColor2" Value="DimGray" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTrackBarItem.SlideAreaWidth" Value="5" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTrackBarItem.ShowTicks" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadTrackBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings />
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

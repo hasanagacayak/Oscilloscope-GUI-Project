@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D6625CD-3145-403A-88DD-C5F9FF24A5A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Oscilloscope</RootNamespace>
+    <AssemblyName>Oscilloscope</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ivi.Driver, Version=1.4.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\IVI Foundation\IVI\Microsoft.NET\Framework64\v2.0.50727\IviFoundationSharedComponents 1.4.1\Ivi.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Ivi.Scope, Version=1.4.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\IVI Foundation\IVI\Microsoft.NET\Framework64\v2.0.50727\IviFoundationSharedComponents 1.4.1\Ivi.Scope.dll</HintPath>
+    </Reference>
+    <Reference Include="Ivi.Visa.Interop, Version=7.1.1.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_64\Ivi.Visa.Interop\7.1.1.0__a128c98f1d7717c1\Ivi.Visa.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RohdeSchwarz.RsRtx.Fx40, Version=2.4.0.0, Culture=neutral, PublicKeyToken=21acc6a002277cd7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\IVI Foundation\IVI\Microsoft.NET\Framework64\v4.0.30319\RohdeSchwarz.RsRtx 2.4.0\RohdeSchwarz.RsRtx.Fx40.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acquisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acquisition.Designer.cs">
+      <DependentUpon>Acquisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brightness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brightness.Designer.cs">
+      <DependentUpon>Brightness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch1.Designer.cs">
+      <DependentUpon>Ch1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch2.Designer.cs">
+      <DependentUpon>Ch2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch3.Designer.cs">
+      <DependentUpon>Ch3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ch4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ch4.Designer.cs">
+      <DependentUpon>Ch4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cursor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cursor.Designer.cs">
+      <DependentUpon>Cursor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFT.Designer.cs">
+      <DependentUpon>FFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Horizontal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horizontal.Designer.cs">
+      <DependentUpon>Horizontal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Measure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Measure.Designer.cs">
+      <DependentUpon>Measure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generator.Designer.cs">
+      <DependentUpon>Generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Protocol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Protocol.Designer.cs">
+      <DependentUpon>Protocol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickMeasure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickMeasure.Designer.cs">
+      <DependentUpon>QuickMeasure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RTA4004.cs" />
+    <Compile Include="ScopeDriver.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenShot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenShot.Designer.cs">
+      <DependentUpon>ScreenShot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trigger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trigger.Designer.cs">
+      <DependentUpon>Trigger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zoom.Designer.cs">
+      <DependentUpon>Zoom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Acquisition.resx">
+      <DependentUpon>Acquisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brightness.resx">
+      <DependentUpon>Brightness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch1.resx">
+      <DependentUpon>Ch1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch2.resx">
+      <DependentUpon>Ch2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch3.resx">
+      <DependentUpon>Ch3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ch4.resx">
+      <DependentUpon>Ch4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cursor.resx">
+      <DependentUpon>Cursor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFT.resx">
+      <DependentUpon>FFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horizontal.resx">
+      <DependentUpon>Horizontal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Measure.resx">
+      <DependentUpon>Measure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Generator.resx">
+      <DependentUpon>Generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Protocol.resx">
+      <DependentUpon>Protocol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickMeasure.resx">
+      <DependentUpon>QuickMeasure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenShot.resx">
+      <DependentUpon>ScreenShot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trigger.resx">
+      <DependentUpon>Trigger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zoom.resx">
+      <DependentUpon>Zoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RadTrackBarTheme.xml" />
+    <None Include="Resources\jj-ying-7JX0-bfiuxQ-unsplash %281%29.jpg" />
+    <None Include="Resources\jj-ying-7JX0-bfiuxQ-unsplash2.jpg" />
+    <None Include="Resources\jj-ying-7JX0-bfiuxQ-unsplash1.jpg" />
+    <None Include="Resources\jj-ying-7JX0-bfiuxQ-unsplash.jpg" />
+    <None Include="Resources\pngtree-black-marble-texture-background-picture-image_1440026.jpg" />
+    <None Include="Resources\Untitled.png" />
+    <None Include="Resources\mili.png" />
+    <None Include="Resources\png-transparent-oscilloscope-electronics-inkscape-heathkit-showing-angle-electronics-text.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
