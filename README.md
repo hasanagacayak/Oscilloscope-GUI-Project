@@ -1,1 +1,1 @@
-# Oscilloscope-GUI-Projesi
+# Oscilloscope GUI Project
